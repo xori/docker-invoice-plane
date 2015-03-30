@@ -9,7 +9,6 @@ docker build -t invoice .
 # start it up and bind to port 3000
 container=$(docker run -dp 3000:80 invoice)
 # wait ~15sec on first startup
-docker logs $container | grep 'mysql root password'
 ```
 
 ### Setup the DB/Install
